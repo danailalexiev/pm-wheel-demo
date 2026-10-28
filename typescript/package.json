@@ -1,0 +1,10 @@
+{
+  "name": "pm-wheel-demo-ts",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "act1": "tsc && node dist/act1-naive.js",
+    "act2": "tsc && node dist/act2-ids.js"
+  },
+  "devDependencies": { "typescript": "5.8.3" }
+}

@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "outDir": "dist",
+    "skipLibCheck": true
+  },
+  "include": ["*.ts"]
+}
