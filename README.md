@@ -34,6 +34,7 @@ typescript/
   act1-strict.ts     Act 1, the TS that catches the change (and what it costs)
   act2-ids.ts        Act 2, strings vs branded types
 kotlin/
+  build.gradle.kts   Gradle build (./gradlew run)
   run.sh             compile + run with plain kotlinc
   src/Main.kt        runs both acts
   src/shop/
@@ -57,12 +58,16 @@ npm run act2
 
 ### Kotlin
 
-Requires `kotlinc` on your `PATH` (e.g. `sdk install kotlin`) and a JDK. Tested with Kotlin 2.1.20 / JDK 21.
+Requires a JDK to launch Gradle. The build uses a JDK 21 toolchain and downloads it if it's missing.
 
 ```sh
 cd kotlin
-./run.sh
+./gradlew run
 ```
+
+In IntelliJ IDEA, open the `kotlin/` folder (or right-click `kotlin/build.gradle.kts` → **Link Gradle Project**), then run `main` in `Main.kt`.
+
+`run.sh` is an alternative that skips Gradle. It needs `kotlinc` on your `PATH` (e.g. `sdk install kotlin`).
 
 ## On stage
 
